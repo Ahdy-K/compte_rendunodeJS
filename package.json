@@ -1,0 +1,29 @@
+{
+  "name": "compte_rendu",
+  "version": "1.0.0",
+  "description": "Exercice 1 du Compte rendu NodeJS Réalisé par Ahdy Kefi 2 GLSI C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahdy-K/compte_rendu.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Ahdy Kéfi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahdy-K/compte_rendu/issues"
+  },
+  "homepage": "https://github.com/Ahdy-K/compte_rendu#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15"
+  }
+}
