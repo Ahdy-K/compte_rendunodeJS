@@ -11,6 +11,13 @@ const userSchema = new mongoose.Schema({
     grade:{String,
            required}
            ,
+    wts : [{
+            name : String,
+            id : {
+                type : mongoose.Schema.Types.ObjectId,
+                ref: 'wt'
+            }
+        }],
     role:{String,
            defaultValue: 'student'}
 })
