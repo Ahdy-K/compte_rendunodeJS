@@ -2,14 +2,14 @@ const mongoose = require('mongoose');
 const joi = require('joi')
 
 const userSchema = new mongoose.Schema({
-    name: {String,
+    name: {type:String,
             required: true
     },
-    email: {String,
+    email: {type:String,
         required: true
     },
-    grade:{String,
-           required}
+    grade:{type: String,
+           required: true}
            ,
     wts : [{
             name : String,
@@ -18,8 +18,8 @@ const userSchema = new mongoose.Schema({
                 ref: 'wt'
             }
         }],
-    role:{String,
-           defaultValue: 'student'}
+    role:{type: String,
+           defaultValue: "user"}
 })
 
 const userValidation = joi.object({

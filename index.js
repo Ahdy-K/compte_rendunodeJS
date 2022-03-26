@@ -3,6 +3,7 @@ const PORT = process.env.PORT|4777
 const {username, password} = require('./credentials')
 const mongoose = require('mongoose')
 const wtRouter = require('./routes/wtRouter')
+const userRouter = require('./routes/userRouter')
 
 /**
  * DataBase connection(mongooDB Atlas)
@@ -14,5 +15,5 @@ const app =express()
 
 
 app.use('/api/whiteTests/',wtRouter)
-app.use('/api/users/')
+app.use('/api/users/', userRouter)
 app.listen(PORT, () => console.log(`App is running on port ${PORT} °_°`))
